@@ -6,7 +6,7 @@ html {
 /*Background Images*/
 body {
   font-family: 'Arvo', serif;
-	background: url("../../assets/images/planner.png") no-repeat center center;
+	background: url("../assets/images/planner.png") no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
   font-family: 'Arvo', serif;
