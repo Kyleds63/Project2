@@ -32,6 +32,10 @@ body {
   color: #d2e0e0;
 }
 
+.calendar {
+  margin-top: 55px;
+}
+
 
 /* Style Buttons */
 .signup {
