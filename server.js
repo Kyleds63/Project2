@@ -32,7 +32,7 @@ app.use(express.static("app/public"));
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+require("app/routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 var authRoute = require('./routes/auth.js')(app,passport);
 
