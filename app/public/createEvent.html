@@ -51,8 +51,8 @@
                 </ul>
                 <!--Login button pushed to the right-->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Logged in as <b>username</b></a></li>
-                    <li><a href="#">Log out</a></li>
+                    <li><a href="#" > Logged in as <span id="currentUser"></span></a></li>
+                    <li><a href="/logout">Log out</a></li>
                 </ul>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <!--  Notepad to write plans on -->
                 <div id="notePad">
                     <label for="planDetails">Details:</label>
-                    <textarea rows="10"></textarea>
+                    <textarea id="details" rows="10"></textarea>
                 </div>
                 <div id="plans" class="plans">
                     <button id="planSubmit" type="button" class="btn btn green btn-lg pull-right" type="submit" value="submit">Submit</button>
@@ -89,6 +89,7 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="js/logic.js"></script>
+    <script src="js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 

@@ -4,53 +4,26 @@
 
 // Dependencies
 // =============================================================
-var User = require("../models/users.js");
-var Plan = require("../models/plans.js");
+var models = require('../models'); // loads index.js
+var User = models.user;    
+
+
 
 // Routes
 // =============================================================
 module.exports = function(app) {
 
+  // Search for Specific Character (or all characters) then provides JSON
+  app.get("/api", function(req, res) {
 
-
-  // If a user sends data to add a new character...
-  app.post("/api/new", function(req, res) {
-
-    // Take the request...
-    var user = req.body;
-
-    // Create a routeName
-    //Rejax
-    var routeName = user.name.replace(/\s+/g, "").toLowerCase();
-
-    // Then add the character to the database using sequelize
-    User.create({
-      routeName: routeName,
-      username: user.username,
-      email: user.email,
-      password: user.password,
-    });
-
+    if (req.user === undefined) {
+      res.json({});
+    }else{
+      res.json({
+        email: req.user.email,
+        firstname: req.user.firstname,
+        lastname: req.user.lastname
+      });
+    }
   });
-
-
-  // If a user sends data to add a new character...
-  app.post("/api/newplan", function(req, res) {
-
-    // Take the request...
-    var plan = req.body;
-
-    // Create a routeName
-    //Rejax
-    var routeName = plan.name.replace(/\s+/g, "").toLowerCase();
-
-    // Then add the character to the database using sequelize
-    Plan.create({
-      routeName: routeName,
-      title: plan.title,
-      time: plan.time,
-      details: plan.details,
-    });
-
-  });
-};
+}

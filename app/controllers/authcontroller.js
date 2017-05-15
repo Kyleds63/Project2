@@ -18,6 +18,12 @@ exports.dashboard = function(req, res) {
  
 }
 
+exports.calendar = function(req, res) {
+ 
+    res.render('calendar');
+ 
+}
+
 exports.logout = function(req, res) {
  
     req.session.destroy(function(err) {

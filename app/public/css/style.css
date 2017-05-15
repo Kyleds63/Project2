@@ -173,3 +173,18 @@ body {
   color: #a9a2bf;
 }
 
+/*---------Calendar Styling----------*/
+.twoButtons{
+  text-align: center;
+  margin:auto;
+}
+
+#settings{
+  margin-right: 250px;
+  color: #2f2b3d;
+}
+
+#createEvent{
+  color: #2f2b3d;
+  margin-left: 250px;
+}

@@ -32,7 +32,8 @@
                 </ul>
                 <!--Login button pushed to the right-->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#loginModal" data-toggle="modal">Login</a></li>
+                    <li><a href="#" > Logged in as <span id="currentUser"></span></a></li>
+                    <li><a href="/logout">Log out</a></li>
                 </ul>
             </div>
         </div>
@@ -94,6 +95,12 @@
         <li>31</li>
       </ul>
     </div>
+
+    <div class="twoButtons">
+      <a href="account.html" id="settings" class="btn btn-lg green"><span class="glyphicon"></span>Settings</a>
+      <a href="createEvent.html" id="createEvent" class="btn btn-lg green"><span class="glyphicon"></span>Create Event</a>
+    </div>
+
     <!--Footer-->
     <div class="footer">
         <div class="container">
@@ -101,8 +108,9 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="js/logic.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 

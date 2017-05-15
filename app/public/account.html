@@ -44,13 +44,12 @@
             </div>
             <div class="navbar-collapse collapse" id="navbarCollapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Profile</a></li>
-                    <li class="active"><a href="#">My Plans</a></li>
+                    <li class="active"><a href="/calendar">My Plans</a></li>
                 </ul>
                 <!--Login button pushed to the right-->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Logged in as <b>username</b></a></li>
-                    <li><a href="#">Log out</a></li>
+                    <li><a href="#" > Logged in as <span id="currentUser"></span></a></li>
+                    <li><a href="/logout">Log out</a></li>
                 </ul>
             </div>
         </div>
@@ -62,17 +61,18 @@
                 <h2>Account Settings:</h2>
                 <div class="table-responsive">
                     <table class="table table-hover table-condensed table-bordered">
-                        <tr data-target="#updateusername" data-toggle="modal">
-                            <td>Username</td>
-                            <td>value</td>
-                        </tr data-target="#updateemail" data-toggle="modal">
-                        <tr>
+                        <tr data-target="#updateemail" data-toggle="modal">
                             <td>Email</td>
-                            <td>value</td>
-                        </tr>
+                            <td><span id="currentEmail"></span></td>
+                         <tr data-target="#updatefirstname" data-toggle="modal">
+                            <td>First Name</td>
+                            <td><span id="currentFirstName"></span></td>
+                         <tr data-target="#updatelastname" data-toggle="modal">
+                            <td>Last Name</td>
+                            <td><span id="currentLastName"></span></td>
                         <tr data-target="#updatepassword" data-toggle="modal">
                             <td>Password</td>
-                            <td>hidden</td>
+                            <td>Hidden</td>
                         </tr>
                     </table>
                 </div>
@@ -191,7 +191,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    <script src="assets/javascript/logic.js"></script>
+    <script src="js//logic.js"></script>
+    <script src="js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
